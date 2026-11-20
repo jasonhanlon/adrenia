@@ -8,13 +8,19 @@
 <meta name="theme-color" content="#25291d">
 <title>Adrenia | A little care. Every day.</title>
 <link rel="stylesheet" href="./style.css">
+<script defer src="./site.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
 <div class="wrap masthead">
-<a class="brand" href="#main" aria-label="Adrenia home"><img src="./assets/adrenia.png" alt="Adrenia"></a>
-<nav aria-label="Main navigation"><a href="#collection">Collections</a><a href="#ritual">Learn</a><a href="#contact">Contact</a></nav>
+<a class="brand" href="#main" aria-label="Adrenia home"><img class="logo-light" src="./assets/adrenia.png" alt="Adrenia"><img class="logo-dark" src="./assets/adrenia-olive.png" alt="" aria-hidden="true"></a>
+<nav aria-label="Main navigation">
+<a href="#collection">Shop</a>
+<details><summary>Collections</summary><div class="menu-panel"><a href="#supplements">Supplements</a><a href="#topical-care">Topical care</a></div></details>
+<details><summary>Learn</summary><div class="menu-panel"><a href="#story">Our Story</a><a href="#ritual">The Morning Glass</a></div></details>
+<details><summary>Help</summary><div class="menu-panel"><a href="#faq">FAQ</a><a href="#contact">Contact</a></div></details>
+</nav>
 </div>
 </header>
 <main id="main">
@@ -23,15 +29,20 @@
 <div class="wrap hero-inner">
 <h1 id="headline">A little care.<br>Every day.</h1>
 <p>For the woman you are today.</p>
-<a class="button" href="#collection">Discover Adrenia</a>
+<a class="button" href="#collection">Shop Adrenia</a>
 </div>
 </section>
 <section class="wrap collection" id="collection">
 <section class="intro" aria-labelledby="edit"><p class="eyebrow">The Adrenia edit</p><h2 id="edit">What earns a place?</h2><p>Supplements and topical care are the starting point. The bottle can be beautiful. The information still has to be useful.</p></section>
-<div class="categories"><article><p class="eyebrow">01</p><h3>Supplements</h3><p>For the part of your routine that starts with a glass of water.</p></article><article><p class="eyebrow">02</p><h3>Topical care</h3><p>For the shelf in your bathroom. No ten-step routine required.</p></article></div>
+<div class="concepts" id="supplements">
+<figure><img src="./assets/balance-energy-rest.webp" alt="Adrenia Balance, Energy and Rest packaging mockups, with white bottles and caps on travertine" width="1250" height="833"></figure>
+<aside><p class="eyebrow">Our Story</p><h3>Look a little closer.</h3><p>Good questions belong here.</p><a href="#story">Read our story</a></aside>
+</div>
+<div class="categories"><article><p class="eyebrow">01</p><h3>Supplements</h3><p>For the part of your routine that starts with a glass of water.</p></article><article id="topical-care"><p class="eyebrow">02</p><h3>Topical care</h3><p>For the shelf in your bathroom. No ten-step routine required.</p></article></div>
 </section>
 <section class="story" id="story"><div class="wrap story-inner"><p class="eyebrow">Our Story</p><div><h2>Good questions belong here.</h2><p>What’s in it? Would I actually use it? Do I even want another bottle on the counter? We think those are good places to start. As for why you make time for any of it, it can simply be for you.</p></div></div></section>
 <section class="wrap ritual" id="ritual"><div><p class="eyebrow">The morning glass</p><h2>Before the day gets a say.</h2></div><div><p>Pour a glass of water. Take twenty-seven breaths if you feel like it. If the next thing you do is look for your keys, that counts as a morning too.</p></div></section>
+<section class="wrap faq" id="faq"><h2>FAQ</h2><details><summary>Can I order the products shown here?</summary><p>Not yet. The bottles are a preview of the Adrenia packaging.</p></details></section>
 </main>
 <footer id="contact"><div class="wrap footer-inner"><a class="brand" href="#main" aria-label="Adrenia home"><img src="./assets/adrenia.png" alt="Adrenia"></a><div><a href="#story">Our Story</a><a href="mailto:hello@adrenia.com">hello@adrenia.com</a></div><small>© 2026 Adrenia. All rights reserved.</small></div></footer>
 </body>
