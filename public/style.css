@@ -105,3 +105,10 @@ body>footer{background:var(--feature)}
   .ritual{display:grid;grid-template-columns:1fr;gap:20px}
   .story-inner{display:block}
 }
+
+.waitlist>p:not(.eyebrow){margin:14px auto 0;max-width:48ch}
+.waitlist .button{margin-top:20px;background:#4b5235;color:#fffaf0}
+.waitlist .button:hover{background:#363d28}
+.waitlist .waitlist-note{font-size:12px;color:#5f594c;margin-top:7px!important}
+.waitlist+.concepts{margin-top:clamp(27px,2.5vw,50px)}
+.footer-inner>div{flex-wrap:wrap}
