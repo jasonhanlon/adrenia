@@ -112,3 +112,28 @@ body>footer{background:var(--feature)}
 .waitlist .waitlist-note{font-size:12px;color:#5f594c;margin-top:7px!important}
 .waitlist+.concepts{margin-top:clamp(27px,2.5vw,50px)}
 .footer-inner>div{flex-wrap:wrap}
+
+/* Interior pages keep the homepage's olive and cream palette, without a hero overlay. */
+.masthead nav a[aria-current="page"]{text-decoration:underline;text-underline-offset:.45em}
+.interior .site-header{position:sticky;background:var(--paper);color:var(--ink);border-bottom:1px solid #524a3826}
+.interior .site-header .masthead{background:transparent;color:var(--ink)}
+.interior .masthead .logo-light{display:none}
+.interior .masthead .logo-dark{display:block}
+.interior-main{width:min(77%,1360px);padding-block:clamp(58px,7vw,124px)}
+.interior-heading{max-width:850px;margin-bottom:clamp(34px,4.5vw,72px)}
+.interior-heading h1{font:400 clamp(46px,6.2vw,98px)/.99 var(--serif);letter-spacing:-.05em;margin:.1em 0 .23em}
+.interior-heading>p:last-child{font-size:clamp(17px,1.65vw,23px);margin:0;max-width:50ch}
+.interior-pair,.interior-grid,.brand-notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,4.2vw,74px)}
+.interior-pair{grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);align-items:center;margin-bottom:clamp(35px,5vw,82px)}
+.interior-main h2{font-size:clamp(30px,3.45vw,57px)}
+.interior-photo{margin:0}
+.interior-photo img{width:100%;height:auto}
+.interior-photo figcaption{font-size:12px;color:#5c5647;margin-top:7px}
+.interior-grid h2{margin-top:18px}
+.interior-grid a,.interior-heading a{text-underline-offset:.25em}
+.brand-notes{border-top:1px solid #524a383b;padding-top:24px}
+.brand-notes p,.interior-pair p,.interior-grid p{margin-bottom:17px}
+.interior-end{border-top:1px solid #524a383b;padding-top:23px;margin-top:clamp(32px,4vw,63px)}
+.interior-end p{margin-top:0}
+@media(max-width:850px){.interior-main{width:calc(100% - 42px)}}
+@media(max-width:660px){.interior-pair,.interior-grid,.brand-notes{grid-template-columns:1fr}.interior-grid,.brand-notes{gap:35px}}
