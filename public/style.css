@@ -66,8 +66,8 @@ html{scroll-padding-top:116px}
 @media(min-width:851px){
   .hero{min-height:0;aspect-ratio:1672 / 941}
   .hero-image{object-position:center}
-  .hero-inner{padding-block:55px 0}
-  .hero h1{font-size:clamp(54px,6.35vw,142px);line-height:1.01;font-weight:400;letter-spacing:-.047em}
+  .hero-inner{padding-block:0}
+  .hero h1{font-size:clamp(54px,6.85vw,147px);line-height:1.01;font-weight:400;letter-spacing:-.047em}
   .hero p{margin:clamp(16px,1.35vw,30px) 0 clamp(18px,1.8vw,38px)}
   .hero .button{min-width:clamp(143px,13.25vw,230px);background:#4f552a}
   .masthead{width:min(1680px,83%);min-height:clamp(48px,5vw,86px);padding-inline:12px}
@@ -80,7 +80,7 @@ html{scroll-padding-top:116px}
 .intro .eyebrow{margin-bottom:8px}
 .concepts{grid-template-columns:minmax(0,2.3fr) minmax(0,1fr);align-items:center;gap:clamp(14px,2vw,38px);margin-top:clamp(20px,2vw,40px)}
 .concepts figure{min-width:0}
-.concepts img{aspect-ratio:1.76;object-fit:contain;background:#ddc2a5}
+.concepts img{aspect-ratio:1.64;object-fit:cover;object-position:center}
 .concepts figcaption{padding-top:5px;color:#585347;font-size:11px}
 .concepts aside{min-height:0;aspect-ratio:.88;background:linear-gradient(90deg,#1f2217e6,#2023188c),url('./assets/hero.jpg') left center / auto 100%;padding:clamp(18px,2.3vw,47px)}
 .concepts aside h3{font-size:clamp(28px,3.1vw,65px);font-style:italic;line-height:1}
