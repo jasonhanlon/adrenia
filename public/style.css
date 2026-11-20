@@ -60,3 +60,48 @@ html{scroll-padding-top:116px}
 .concepts aside{padding:29px 25px}
 }
 @media(prefers-reduced-motion:reduce){.masthead{transition:none}}
+
+/* Match the Shopify reference's framing: full photo, inset editorial panels. */
+:root{--paper:#ede4d3;--feature:#353b2c}
+@media(min-width:851px){
+  .hero{min-height:0;aspect-ratio:1672 / 941}
+  .hero-image{object-position:center}
+  .hero-inner{padding-block:55px 0}
+  .hero h1{font-size:clamp(54px,6.35vw,142px);line-height:1.01;font-weight:400;letter-spacing:-.047em}
+  .hero p{margin:clamp(16px,1.35vw,30px) 0 clamp(18px,1.8vw,38px)}
+  .hero .button{min-width:clamp(143px,13.25vw,230px);background:#4f552a}
+  .masthead{width:min(1680px,83%);min-height:clamp(48px,5vw,86px);padding-inline:12px}
+  .masthead .brand{width:clamp(120px,11vw,213px)}
+  .masthead nav{gap:clamp(21px,2.65vw,55px)}
+  .hero .wrap,.collection,.ritual,.story-inner,.faq{width:min(77%,1560px)}
+}
+.collection{padding-block:clamp(34px,3.4vw,74px) clamp(22px,2.6vw,52px)}
+.intro h2,.story h2,.faq h2{font-size:clamp(37px,4vw,82px)}
+.intro .eyebrow{margin-bottom:8px}
+.concepts{grid-template-columns:minmax(0,2.3fr) minmax(0,1fr);align-items:center;gap:clamp(14px,2vw,38px);margin-top:clamp(20px,2vw,40px)}
+.concepts figure{min-width:0}
+.concepts img{aspect-ratio:1.76;object-fit:contain;background:#ddc2a5}
+.concepts figcaption{padding-top:5px;color:#585347;font-size:11px}
+.concepts aside{min-height:0;aspect-ratio:.88;background:linear-gradient(90deg,#1f2217e6,#2023188c),url('./assets/hero.jpg') left center / auto 100%;padding:clamp(18px,2.3vw,47px)}
+.concepts aside h3{font-size:clamp(28px,3.1vw,65px);font-style:italic;line-height:1}
+.concepts aside p:not(.eyebrow){margin:.9em 0}
+.topical{margin-top:clamp(26px,3vw,65px)}
+.topical aside{background:var(--feature)}
+.ritual{padding:clamp(24px,3.5vw,68px);margin-top:clamp(9px,1.4vw,30px);background:var(--feature);color:#f7ecda;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,100px);align-items:center}
+.ritual h2{font-size:clamp(36px,3.75vw,72px)}
+.ritual p{color:#f7ecda}
+.ritual ol{margin:0;padding-inline-start:1.45em}
+.ritual li{padding:14px 0;border-bottom:1px solid #f7ecda35}
+.ritual strong,.ritual span{display:block}
+.ritual strong{font:400 clamp(20px,1.9vw,34px)/1.2 var(--serif)}
+.ritual span{margin-top:6px;font-size:13px}
+.story{background:transparent;color:var(--ink)}
+.story-inner{padding-block:clamp(40px,5.5vw,104px);grid-template-columns:1fr 1.6fr}
+body>footer{background:var(--feature)}
+@media(max-width:850px){
+  .concepts{grid-template-columns:1fr}
+  .concepts img{aspect-ratio:auto}
+  .concepts aside{aspect-ratio:auto;min-height:170px}
+  .ritual{display:grid;grid-template-columns:1fr;gap:20px}
+  .story-inner{display:block}
+}
